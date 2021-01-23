@@ -42,66 +42,16 @@ ul {
   display: none;
 }
 
-/* 
 img {
-  display: block;
-  max-width: 100%;
+  max-width: 500px;
   height: auto;
 }
 
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-ul {
-  list-style: none;
-}
-
-.container {
-  text-align: center;
-  max-width: 1100px;
-}
-
-#query {
-  width: 50%;
-  padding: 10px;
-  border-radius: 5px;
-  margin-bottom: 20px;
-  font-size: medium;
-}
-.articles {
-  padding-left: 10%;
-  padding-right: 10%;
-}
-
-.country-name {
-  margin-bottom: 20px;
-  text-align: center;
-}
-.country-info {
+.stats {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
-.desc {
-  margin-bottom: 15px;
-  font-size: x-large;
-  line-height: normal;
+p {
+  margin: 10px;
 }
-
-.lang-item,
-.country-item {
-  font-size: x-large;
-  margin-top: 12px;
-  padding-left: 20px;
-}
-.lang-item::before,
-.country-item::before {
-  color: black;
-  content: '\2022';
-  font-size: 26px;
-  font-weight: 700;
-  line-height: 18px;
-  margin-right: 12px;
-} */
