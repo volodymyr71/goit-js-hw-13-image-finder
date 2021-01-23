@@ -5,7 +5,7 @@ export default {
   apiUrl: `https://pixabay.com/api/`,
   apiKey: `19988178-c6225cb482599f6c35806385a`,
   page: 1,
-  perPage: 3,
+  perPage: 12,
   orientationImg: `horizontal`,
   imgType: `photo`,
 
