@@ -1,5 +1,5 @@
 {
-  "name": "goit-js-hw-12-countries",
+  "name": "goit-js-hw-13-image-finder",
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
@@ -11,15 +11,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/volodymyr71/goit-js-hw-12-countries.git"
+    "url": "git+https://github.com/volodymyr71/goit-js-hw-13-image-finder.git"
   },
   "keywords": [],
   "author": "Volodymyr Kyrylenko",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/volodymyr71/goit-js-hw-12-countries/issues"
+    "url": "https://github.com/volodymyr71/goit-js-hw-13-image-finder/issues"
   },
-  "homepage": "hhttps://github.com/volodymyr71/goit-js-hw-12-countries#readme",
+  "homepage": "hhttps://github.com/volodymyr71/goit-js-hw-13-image-finder#readme",
   "devDependencies": {
     "@babel/core": "^7.11.6",
     "@babel/plugin-proposal-class-properties": "^7.10.4",
