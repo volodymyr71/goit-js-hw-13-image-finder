@@ -29,21 +29,21 @@ refs.moreBtn.addEventListener('click', () => {
   getFetch(queryValue);
 });
 
-// function getFetch(q) {
-//   let params = `?key=${apiKey}&image_type=${imgType}&orientation=${orientationImg}&q=${q}&page=${page}&per_page=${perPage}`;
-//   let url = apiUrl + params;
-//   fetch(url)
-//     .then(a => a.json())
-//     .then(b => {
-//       return b.hits;
-//     })
-//     .then(array => {
-//       let item = templateItems(array);
-//       refs.list.insertAdjacentHTML('beforeend', item);
-//       if (refs.list.children) {
-//         refs.moreBtn.classList.remove('isHiden');
-//       } else {
-//         refs.moreBtn.classList.add('isHiden');
-//       }
-//     });
-// }
+function getFetch(q) {
+  let params = `?key=${apiKey}&image_type=${imgType}&orientation=${orientationImg}&q=${q}&page=${page}&per_page=${perPage}`;
+  let url = apiUrl + params;
+  fetch(url)
+    .then(a => a.json())
+    .then(b => {
+      return b.hits;
+    })
+    .then(array => {
+      let item = templateItems(array);
+      refs.list.insertAdjacentHTML('beforeend', item);
+      if (refs.list.children) {
+        refs.moreBtn.classList.remove('isHiden');
+      } else {
+        refs.moreBtn.classList.add('isHiden');
+      }
+    });
+}
