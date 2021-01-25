@@ -19,11 +19,11 @@ refs.moreBtn.addEventListener('click', () => {
   // console.log(apiService.page);
   renderFetch(apiService.getFetch(queryValue));
 
-  if (apiService.page > 1) {
-    setTimeout(function () {
-      window.scrollBy(0, window.innerHeight);
-    }, 200);
-  }
+  // if (apiService.page > 1) {
+  //   setTimeout(function () {
+  //     window.scrollBy(0, window.innerHeight);
+  //   }, 200);
+  // }
 });
 
 function renderFetch(prom) {
@@ -31,8 +31,14 @@ function renderFetch(prom) {
     let item = templateItems(array);
     refs.list.insertAdjacentHTML('beforeend', item);
     if (refs.list.children) {
+      window.scrollTo({
+        top: document.body.scrollHeight,
+        left: 0,
+        behavior: 'smooth',
+      });
       refs.moreBtn.classList.remove('isHiden');
-    } else {
+    }
+    if (array.length < 12) {
       refs.moreBtn.classList.add('isHiden');
     }
   });
